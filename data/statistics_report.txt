@@ -1,0 +1,145 @@
+KILTER BOARD PREDICTOR - STATISTICAL ANALYSIS REPORT
+=======================================================
+
+DESCRIPTIVE STATISTICS (Numeric Columns):
+---------------------------------------------
+
+route_id:
+  Count: 500
+  Mean: 250.5000
+  Median: 250.5000
+  Std Dev: 144.4818
+  Min: 1.0000
+  Max: 500.0000
+  Skewness: 0.0000
+  Kurtosis: -1.2000
+
+angle:
+  Count: 500
+  Mean: 35.6800
+  Median: 40.0000
+  Std Dev: 19.2686
+  Min: 0.0000
+  Max: 70.0000
+  Skewness: -0.2887
+  Kurtosis: -0.4791
+
+num_holds:
+  Count: 500
+  Mean: 15.6300
+  Median: 15.0000
+  Std Dev: 5.0187
+  Min: 8.0000
+  Max: 24.0000
+  Skewness: 0.1044
+  Kurtosis: -1.2311
+
+height:
+  Count: 500
+  Mean: 3.5365
+  Median: 3.5562
+  Std Dev: 0.8378
+  Min: 1.3300
+  Max: 6.0136
+  Skewness: -0.0442
+  Kurtosis: -0.0944
+
+setter_experience:
+  Count: 500
+  Mean: 5.0580
+  Median: 5.0000
+  Std Dev: 2.6039
+  Min: 1.0000
+  Max: 9.0000
+  Skewness: -0.0262
+  Kurtosis: -1.2033
+
+completion_rate:
+  Count: 475
+  Mean: 0.6181
+  Median: 0.6324
+  Std Dev: 0.2348
+  Min: 0.0747
+  Max: 0.9500
+  Skewness: -0.1829
+  Kurtosis: -1.1172
+
+average_attempts:
+  Count: 500
+  Mean: 3.9620
+  Median: 4.0000
+  Std Dev: 1.7095
+  Min: 1.0000
+  Max: 9.0000
+  Skewness: 0.4314
+  Kurtosis: -0.1965
+
+grade_v_scale:
+  Count: 500
+  Mean: 8.4140
+  Median: 9.0000
+  Std Dev: 5.1528
+  Min: 0.0000
+  Max: 16.0000
+  Skewness: -0.0931
+  Kurtosis: -1.3171
+
+CATEGORICAL STATISTICS:
+-------------------------
+
+wall_type:
+  Count: 500
+  Unique Values: 3
+  Mode: overhang
+  Mode Frequency: 243 (48.60%)
+  Entropy: 0.9150
+
+hold_type:
+  Count: 500
+  Unique Values: 5
+  Mode: crimps
+  Mode Frequency: 152 (30.40%)
+  Entropy: 1.5527
+
+CORRELATION ANALYSIS:
+--------------------
+Method: pearson
+Mean Absolute Correlation: 0.0938
+Maximum Correlation: 0.9134
+
+Strong Correlations (|r| >= 0.7):
+  completion_rate - grade_v_scale: -0.9134
+
+NORMALITY TESTS:
+----------------
+
+route_id:
+  Kolmogorov-Smirnov: p=0.0667, Normal: True
+
+angle:
+  Kolmogorov-Smirnov: p=0.0000, Normal: False
+
+num_holds:
+  Kolmogorov-Smirnov: p=0.0000, Normal: False
+
+height:
+  Kolmogorov-Smirnov: p=0.9257, Normal: True
+
+setter_experience:
+  Kolmogorov-Smirnov: p=0.0000, Normal: False
+
+completion_rate:
+  Kolmogorov-Smirnov: p=0.0052, Normal: False
+
+average_attempts:
+  Kolmogorov-Smirnov: p=0.0000, Normal: False
+
+grade_v_scale:
+  Kolmogorov-Smirnov: p=0.0000, Normal: False
+
+HYPOTHESIS TESTS (Target: grade_v_scale):
+-----------------------------------
+Significant Associations (p < 0.05):
+  completion_rate: p=0.000000 (Pearson Correlation)
+  num_holds: p=0.000000 (Pearson Correlation)
+  angle: p=0.001148 (Pearson Correlation)
